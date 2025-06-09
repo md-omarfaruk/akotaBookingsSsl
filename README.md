@@ -1,0 +1,3 @@
+# This is a custom WordPress Plugin, developed for a Room Booking website. Requirements are when user wants to book a room and click that room button to book so there will be shown a multi-step popup form. and that form has two opitons about payment, one is pay onw and second is pay on arrival. and after submitted the form user will get a email automatically.
+# Here Used Ssl Commerz version 4
+# Live Demo link https://for-test.rf.gd/

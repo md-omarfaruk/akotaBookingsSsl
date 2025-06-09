@@ -1,0 +1,46 @@
+.all-bookings{
+    font-size: 37px !important;
+    font-weight: bold !important;
+    color: #005c37;
+    margin-bottom: 20px !important;
+}
+.widefat * {
+    word-wrap: break-word;
+    border-bottom: 2px solid green;
+}
+
+table.widefat th {
+    background: #01ce7c;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold !important;
+}
+th {
+    border-right: 2px solid #E41E1E;
+}
+table.widefat td {
+    padding: 8px;
+    background-color: #c8f8e5;
+}
+td {
+    border-right: 2px solid gray;
+}
+table.widefat.fixed {
+}
+.wp-core-ui .button-link-delete {
+    background-color: #E41E1E  !important;
+    color: white !important;
+    padding: 1px 6px;
+    font-weight: bold !important;
+}
+.wp-core-ui .button-link{
+    background-color: #dddddd !important;
+    padding: 1px 14px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+input.edit-item{
+    width: 50% !important;
+}
+

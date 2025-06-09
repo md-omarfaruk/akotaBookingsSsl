@@ -1,0 +1,184 @@
+@media only screen and (max-width: 576px) {
+  .booking-pop-up{
+    max-width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  padding: 20px 13px;
+
+  }
+  .booking-header-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+  .close-pop-up{
+    max-width: 20px;
+  }
+  .top-heading {
+    font-size: 45px;
+  }
+
+  .header-bg {
+    max-width: 100%;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .step-heading {
+    font-size: 11px;
+  }
+
+  .step-number {
+    max-width: 36px;
+    padding: 5px 0;
+    margin: 8px auto;
+  }
+
+  .plan-info {
+    width: 33%;
+    border: none;
+  }
+
+  .plan-info h3 {
+    margin: 24px 0 6px 0;
+    font-size: 13px;
+  }
+
+  .info h2 {
+    font-size: 13px;
+  }
+
+  .plan-info img {
+    width: 13px;
+    height: auto;
+    margin-right: 16px;
+  }
+  .private-workspace,
+.shared-workspace,
+.collaborative-workspace {
+  margin: 30px auto;
+}
+  .chosen-plan-overview h1{
+    font-size: 39px;
+  }
+  .others-plan-info {
+    margin-bottom: 10px;
+  }
+
+  .monthly-durations {
+    padding: 0 0;
+  }
+  .monthly-durations h4 {
+    padding: 40px 35px;
+
+  }
+  .conditions-checkbox{
+    margin-top: 35px;
+  }
+  .terms-and-conditions{
+    margin-top: -10px;
+  }
+  .term-and-conditons-label{
+    font-size: 18px;
+  }
+  .continue{
+    padding: 15px 44px;
+  }
+  .back{
+    padding: 15px 61px;
+  }
+  .personal-details-form{
+    padding: 0 0;
+  }
+  .personal-details h1{
+    margin: 20px 0;
+  }
+  .required-inputs{
+  width: 320px;
+  }
+  .personal-details .conditions-checkbox{
+    margin-top: 20px;
+  }
+  .review-payment-details{
+    font-family: Helvetica Light, sans-serif;
+  }
+  .review-payment-details h1{
+    color: #231F20;
+    font-family: Helvetica Bold, sans-serif;
+    font-size: 39px;
+    margin-top: 20px;
+  }
+  .review-payment-details p{
+    color: #231F20;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .first-monthly-payment, .ongoing-monthly-payment{
+    min-width: 100%;
+    padding: 0 20px 15px 20px;
+    background-color: #E3E3E3;
+    margin-top: 15px;
+  }
+
+  .first-monthly-payment div{
+    margin-bottom: 15px;
+  }
+  .first-monthly-payment div:last-child{
+    margin-top: 15px;
+  }
+ .first-monthly-payment h5{
+  font-size: 20px;
+ }
+.ongoing-monthly-payment div{
+  margin-bottom: 15px;
+}
+.ongoing-monthly-payment hr{
+  margin-bottom: 15px;
+}
+.ongoing-monthly-payment h5{
+font-size: 20px;
+}
+.ongoing-monthly-payment h6{
+font-size: 16px;
+}
+.review-payment-details{
+  padding-bottom: 15px;
+}
+.review-payment-details h3{
+margin: 20px 0 20px 20px;
+}
+
+.review-payment-details input[type="radio" i]{
+width: 14px;
+height: 14px;
+}
+.payment-radio input[type="radio"] {
+  font-size: 18px;
+}
+.payment-radio > label{
+  font-size: 20px;
+}
+
+.continue#reviewPaymentDetailsContinueBtn{
+  padding: 15px 5px;
+}
+input#submit {
+  padding: 15px 98px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.booking-details {
+  padding: 0 0;
+}
+.booking-confirmation,
+.booking-plan-details,
+.booking-payment-details,
+.booking-information {
+  max-width: 100%;
+}
+.check-email {
+  padding: 15px 110px;
+}
+}

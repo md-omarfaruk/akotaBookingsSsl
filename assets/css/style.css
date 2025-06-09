@@ -1,0 +1,905 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+/* ---------------------Fonts-Start------------------- */
+/* --------------------Helvetica-Fonts-------------------- */
+@font-face {
+  font-family: 'Helvetica Bold';
+  src: url('../font/helveticaNeueBlack/HelveticaNeueBold.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Medium';
+  src: url('../font/helveticaNeueBlack/HelveticaNeueMedium.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Light';
+  src: url('../font/helveticaNeueBlack/HelveticaNeueLight.otf') format('opentype');
+  font-style: normal;
+}
+
+/* --------------------Myriad-Fonts-------------------- */
+@font-face {
+  font-family: 'Myriad Bold';
+  src: url('../font/myriad-pro/MYRIADPRO-BOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Semibold';
+  src: url('../font/myriad-pro/MYRIADPRO-SEMIBOLD.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Regular';
+  src: url('../font/myriad-pro/MYRIADPRO-REGULAR.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------------------Fonts-End------------------- */
+/* ---------------------Body------------------- */
+.open-popup{
+  display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.booking-pop-up{
+  width: 60%;
+  background-color: white;
+  border-radius: 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  padding: 20px 30px;
+  z-index: 99;
+  border: 1px solid;
+}
+/* ---------------------Header-Start------------------ */
+.close-pop-up{
+  max-width: 40px;
+  float: right;
+  cursor: pointer;
+}
+.top-heading {
+  color: #231F20;
+  text-align: left;
+  margin: 20px 0;
+  font-size: 40px;
+  font-family: Helvetica Bold, sans-serif;
+}
+
+.header-bg {
+  background-color: #F2F2F2;
+  border-radius: 5px 5px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.header {
+  font-family: Helvetica Light, sans-serif;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.steps {
+  margin: 10px auto;
+}
+
+.step-heading {
+  font-size: 17px;
+}
+
+.step-number {
+  max-width: 46px;
+  max-height: 46px;
+  padding: 10px;
+  margin: 12px auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.booking-header-info {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000000;
+  border-radius: 0px 0px;
+  margin: 25px 0;
+}
+#planTypeName{
+  font-size: 13px;
+  font-weight: 500;
+}
+#people{
+  font-size: 17px;
+  font-weight: 500;
+}
+#startDate{
+  font-size: 17px;
+  font-weight: 500;
+}
+#duration{
+  font-size: 15px;
+  font-weight: 500;
+}
+.spanbdt{
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+#monthlyCost{
+  font-size: 17px;
+  font-weight: 500;
+}
+#monthlycostheader{
+  border: 1px solid #000000;
+  background: #000000;
+}
+.plan-info {
+  width: 20%;
+  border-right: 1px solid #000000;
+  background-color: #ffffff;
+  padding: 0 0px;
+  height: 70px;
+}
+
+.plan-info:last-child {
+  border: none;
+  color: white;
+  background-color: #231F20;
+}
+
+.plan-info.active {
+  color: white;
+  background-color: #231F20;
+}
+
+.plan-info h3 {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  font-size: 15px;
+  font-family: Myriad Regular, sans-serif;
+  font-weight: 650;
+}
+#nop{
+  margin-left: 65px;
+}
+.plan-info img {
+  width: 23px;
+  height: 27px;
+  margin-right: 16px;
+  margin-left: 15px;
+}
+#pvtimg{
+  width: 18px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.info h2 {
+  color: #231F20;
+  font-size: 20px;
+  font-family: Helvetica Light, sans-serif;
+}
+
+.plan-info:last-child .info h2 {
+  color: white !important;
+}
+
+/* ---------------------Header-End------------------ */
+/* ----------------------Workspace-Plans-Start------------------ */
+.private-workspace{
+  max-width: 350px;
+  font-family: Helvetica Light, sans-serif;
+  margin: 20px auto;
+  height: 510px;
+  width: 350px;
+}
+.shared-workspace{
+  max-width: 350px;
+  font-family: Helvetica Light, sans-serif;
+  margin: 20px auto;
+  height: 510px;
+  width: 350px;
+}
+.collaborative-workspace {
+  max-width: 350px;
+  font-family: Helvetica Light, sans-serif;
+  margin: 20px auto;
+  height: 510px;
+  width: 350px;
+}
+
+.private-workspace {
+  border: 2px solid #E41E1E;
+}
+
+.shared-workspace {
+  border: 2px solid #FF7439;
+}
+
+.collaborative-workspace {
+  border: 2px solid #3E79E2;
+}
+
+.private-workspace>h2 {
+  color: #F30010;
+  font-size: 26px;
+  font-family: Helvetica Bold, sans-serif;
+  padding: 30px 30px 0 30px;
+}
+
+
+#hybridOfficePopup{
+  margin: 30px auto;
+}
+
+
+.shared-workspace>h2 {
+  color: #FF7439;
+  font-size: 26px;
+  font-family: Helvetica Bold, sans-serif;
+  padding: 30px 30px 0 30px;
+}
+
+.collaborative-workspace>h2 {
+  color: #3E79E2;
+  font-size: 26px;
+  font-family: Helvetica Bold, sans-serif;
+  padding: 30px 30px 0 30px;
+}
+
+.private-workspace>hr {
+  background-color: #E41E1E;
+  height: 1px;
+  border: 0;
+}
+
+.shared-workspace>hr {
+  background-color: #FF7439;
+  height: 1px;
+  border: 0;
+}
+
+.collaborative-workspace>hr {
+  background-color: #3E79E2;
+  height: 1px;
+  border: 0;
+}
+
+.office>p {
+  font-family: Helvetica Light, sans-serif;
+  font-weight: 600;
+  text-align: end;
+  padding: 0 30px 15px 30px;
+}
+
+.plan-selection {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 16px 30px;
+}
+
+.plan-selection div>input {
+  margin-top: 17px;
+  width: 16px;
+  height: 16px;
+}
+
+.plan-selection div>label {
+  font-size: 18px;
+}
+
+.values>p {
+  font-family: Helvetica Light, sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.services {
+  padding: 14px 15px 34px 15px;
+}
+
+.services>p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ----------------------Workspace-Plans-End------------------ */
+/* --------------------Chosen-Plan-Overview-start----------------------- */
+
+.chosen-plan-overview {
+  font-family: Helvetica Light, sans-serif;
+  padding-bottom: 30px;
+}
+
+.chosen-plan-overview h1 {
+  font-family: Helvetica Bold, sans-serif;
+  margin: 24px 0 30px 0;
+  color: #E41E1E;
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+.chosen-plan-overview h3 {
+  font-family: Helvetica Light, sans-serif;
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.chosen-plan-overview h4 {
+  font-family: Helvetica Light, sans-serif;
+  font-size: 14px;
+}
+
+.others-plan-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.opih4{
+  color: #000000;
+  font-weight: bold;
+}
+
+select.selected-plan-overview {
+  padding: 11px 7px;
+  margin: 14px 0;
+  border: 1px solid #9A9A9A;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 170px;
+}
+
+.people-quantity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 170px;
+  padding: 5px;
+  margin: 14px 0;
+  border: 1px solid #9A9A9A;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.decrement,
+.increment {
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+  width: 38px;
+}
+
+.decrement:hover {
+  background-color: #fcb7b7;
+}
+
+.increment:hover {
+  background-color: #fcb7b7;
+}
+
+.date {
+  padding: 9px 7px;
+  margin: 14px 0;
+  border: 1px solid #9A9A9A;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 170px;
+}
+
+/* --------------------Chosen-Plan-Overview-End----------------------- */
+/* ------------------------------Choose-a-Duraton-Start------------------- */
+.choose-duration {
+  font-family: Helvetica Light, sans-serif;
+  letter-spacing: .5px;
+  margin-bottom: 38px;
+}
+
+.choose-duration h2 {
+  font-family: Helvetica Light, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 41px;
+}
+
+.monthly-durations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+
+.monthly-durations h4 {
+  border: 2px solid #231F20;
+  color: #000000;
+  border-radius: 100%;
+  padding: 35px 31px;
+  line-height: 20px;
+  margin-top: 40px;
+  margin-bottom: 44.5px;
+  font-size: 13px;
+}
+
+#per:hover{
+  background-color: #E72027;
+}
+#three:hover{
+  background-color: #F9BA15;
+}
+#six:hover{
+  background-color: #33AA6F;
+}
+#twelve:hover{
+  background-color: #0092FF;
+}
+
+.conditions-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.terms-and-conditions {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.term-and-conditons-label {
+  font-family: Helvetica Light, sans-serif;
+  font-size: 21px;
+  align-content: center;
+}
+
+/* ------------------------------Choose-a-Duraton-End------------------- */
+/* ----------------------Continue-Back-button-Start----------------------------- */
+.continue {
+  font-family: Helvetica Light, sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #000102;
+  border: 1px solid #000102;
+  border-radius: 3px;
+  padding: 11px 46px;
+}
+
+.continue:hover {
+  color: #231F20;
+  background-color: white;
+  border: 1px solid #231F20;
+}
+
+.back {
+  font-family: Helvetica Light, sans-serif;
+  font-size: 15px;
+  color: #000102;
+  background-color: white;
+  border: 1px solid #000102;
+  border-radius: 3px;
+  padding: 11px 55px;
+}
+
+.back:hover {
+  color: #ffffff;
+  background-color: #000102;
+}
+
+/* ----------------------Continue-Back-button-End----------------------------- */
+/* ---------------------Personal-Detials-Start----------------------------- */
+.personal-details {
+  font-family: Helvetica Light, sans-serif;
+  padding-bottom: 30px;
+}
+
+
+.personal-details-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.personal-details-form h1 {
+  color: #231F20;
+  font-family: Helvetica Light, sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  margin: 30px 0 10px 0;
+}
+
+.required-fields-text {
+  color: #231F20;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.required-inputs {
+  width: 300px;
+  height: 33px;
+  padding: 10px 0 10px 20px;
+  font-size: 16px;
+  border: 1px solid #8D8D8D;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.term-and-conditons-label{
+  font-size: 14px;
+  margin: 20px 0px 1px 5px;
+}
+.terms-and-conditions{
+  margin: 20px 0px 0px 0px;
+  height: 13px;
+  width: 13px;
+}
+.personal-details{
+  margin-top: 30px;
+} 
+.conditions-checkbox {
+  margin-top: 17px;
+
+}
+
+/* ---------------------Personal-Details-End----------------------------- */
+/* ---------------------Review-Payment-Details-Start----------------------------- */
+.review-payment-details {
+  font-family: Helvetica Light, sans-serif;
+  padding-bottom: 30px;
+}
+
+.review-payment-details h1 {
+  color: #231F20;
+  font-family: Helvetica Bold, sans-serif;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.review-payment-details p {
+  color: #231F20;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.monthly-payment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.first-monthly-payment h2 {
+  margin: 15px 0 5px;
+  font-family: Helvetica Light, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 17px;
+}
+
+.first-monthly-payment,
+.ongoing-monthly-payment {
+  width: 450px;
+  height: 210px;
+  padding: 0 40px 15px 40px;
+  background-color: #E3E3E3;
+  margin-top: 20px;
+}
+
+.first-monthly-payment h4 {
+  text-align: end;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.first-monthly-payment div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.first-monthly-payment div:last-child {
+  margin-top: 30px;
+}
+
+.first-monthly-payment h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.taxvath5{
+  margin: -15px 0 0 0;
+}
+#taxVat{
+  margin: -10px 0 0 0;
+}
+#subsequentTaxVat{
+  margin: -10px 0 0 0;
+}
+
+.ongoing-monthly-payment h2 {
+  margin: 15px 0 5px;
+  font-family: Helvetica Light, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 17px;
+}
+
+.ongoing-monthly-payment h4 {
+  text-align: end;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.ongoing-monthly-payment div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.ongoing-monthly-payment hr {
+  margin-bottom: 20px;
+}
+.fmhr{
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+#tsm{
+  margin-top: -10px;
+}
+#reviewSubsequentTotal{
+  margin-top: -10px;
+}
+
+.ongoing-monthly-payment h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ongoing-monthly-payment h6 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: -15px;
+}
+
+.review-payment-details h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 15px 0 15px 40px;
+}
+
+.review-payment-details hr {
+  max-width: 470px;
+}
+#pshr{
+  margin-bottom: 10px;
+}
+.payment-radio{
+  margin-top: 0px;
+  margin-bottom:20px;
+}
+.payment-radio h3{
+  color: red;
+  margin: 15px 0 0 0;
+}
+
+.payment-radio input[type="radio"] {
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  margin-top: 15px;
+  font-family: Helvetica Light, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.payment-radio > label{
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+.continue#submit{ 
+  padding: 11px 15px;
+}
+/*input#submit {
+  font-family: Helvetica Light, sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000102;
+  border-radius: 8px;
+  padding: 9px 46px;
+  margin-top: 20px;
+  margin-left: 80px;
+  
+}*/
+
+input#submit:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+/* ---------------------Review-Payment-Details-End----------------------------- */
+/* --------------------Booking-details-overview-Start----------------------- */
+.booking-details-overview {
+  font-family: Helvetica Light, sans-serif;
+}
+
+.booking-details-overview h1 {
+  font-size: 22px;
+  text-align: left;
+  color: #000000;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.booking-details-overview h2, h4 {
+  font-family: Helvetica Light, sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 25px;
+}
+.ovh{
+  margin-left: 80px;
+}
+.booking-details-overview h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.booking-details-overview h4 {
+  font-size: 15px;
+}
+.booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.booking-details img {
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 12px;
+}
+.booking-details p {
+  line-height: 20px;
+  font-size: 14px;
+}
+.booking-plan-details{
+  width: 40%;
+  margin-left: 50px;
+}
+
+.booking-confirmation,
+.booking-information {
+  max-width: 48%;
+}
+
+.booking-payment-details{
+  width: 60%;
+}
+
+.booking-confirmation h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.booking-confirmation div {
+  display: flex;
+  margin: 15px 0;
+}
+.booking-email{
+  color: #09AD66;
+}
+.booking-id{
+  color: #1873D6;
+}
+.booking-plan-details h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.booking-plan-details div {
+  display: flex;
+  margin: 15px 0;
+}
+
+.booking-payment-details h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.booking-payment-details div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.bold-text{
+  font-family: Helvetica Bold, sans-serif;
+  font-weight: 600;
+}
+.booking-condition{
+  color: #FC0606;
+}
+.check-email {
+  font-family: Helvetica Light, sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #000102;
+  border: 1px solid #000102;
+  border-radius: 8px;
+  padding: 15px 100px;
+  margin-top: 20px;
+}
+
+.check-email:hover {
+  color: #000102;
+  background-color: #ffffff;
+  border: 1px solid #000102;
+}
+/* --------------------Booking-details-overview-End----------------------- */
+
+/* -------------Frontend-Interact-Css-Start------------------------------- */
+.view-none {
+  display: none;
+}
+.view{
+  display: block;
+}
+
+.step-number.active {
+  color: white;
+  background-color: #020202;
+}
+
+.step-number.completed {
+  color: white;
+  background-color: #CCCCCC;
+}
+
+/* -------------Frontend-Interact-Css-End------------------------------- */
